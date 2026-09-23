@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500&family=League+Spartan:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F5F2;
+    color: #212121;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+
+.navbar {
+    width: 99%;
+    min-height: 58px;
+    margin: 0px auto 0;
+    padding: 0 24px;
+    background-color: #212121;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #F7F5F2;
+    text-decoration: none;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #F7F5F2;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 8px 13px;
+    border: 1px solid #777777;
+    border-radius: 18px;
+}
+
+.nav-links a:hover {
+    background-color: #3A3A3A;
+    border-color: #BBBBBB;
+}
+
+.search-box {
+    width: 150px;
+    height: 35px;
+    background-color: #3A3A3A;
+    border: 1px solid #777777;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.search-box span {
+    color: #BBBBBB;
+    margin-right: 7px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.search-box input::placeholder {
+    color: #BBBBBB;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.cart {
+    color: #F7F5F2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px 10px;
+    border: 1px solid #777777;
+    border-radius: 18px;
+}
+
+.menu-button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    position: absolute;
+    top: 85px;
+    right: 1.5%;
+    width: 220px;
+    padding: 15px;
+    background-color: #212121;
+    border-radius: 18px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+}
+
+
+.menu a {
+    padding: 12px 15px;
+    color: #F7F5F2;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+.menu a:hover {
+    background-color: #3A3A3A;
+}
+
+
+/* Show menu */
+
+.menu-open .menu {
+    display: flex;
+}
+
+/* Headings */
+.page-heading {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 38px;
+}
+
+.page-heading h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.page-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Cards */
+.about-grid {
+    width: 74%;
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.about-items {
+    min-width: 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 99%;
+    min-height: 52px;
+    margin: auto auto 0px;
+    padding: 0 25px;
+    border-radius: 30px;
+    background-color: #212121;
+    color: #F7F5F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
