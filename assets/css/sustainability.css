@@ -149,6 +149,70 @@ body {
     color: #777;
 }
 
+/* Sustainability Steps */
+
+.steps {
+    width: 72%;
+    max-width: 1220px;
+    margin: 0 auto 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28 px;
+}
+
+/* Individual Step */
+
+.step-card {
+    min-width: 0;
+}
+
+/* Step Number */
+
+.step-number {
+    color: #1E4C23;
+    font-family: "League Spartan", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+/* Image */
+
+.step-image {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #DED8CA;
+    border-radius: 17px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Step Info */
+
+.step-info {
+    background-color: #e8ddcf;
+    border-radius: 17px;
+    padding: 17px 18px 20px;
+    min-height: 155px;
+}
+
+.step-info h2 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.step-info p {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #555;
+}
+
+
 .hero {
     width: 88%;
     max-width: 1050px;
