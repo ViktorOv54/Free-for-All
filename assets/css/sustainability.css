@@ -157,7 +157,7 @@ body {
     margin: 0 auto 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 28 px;
+    gap: 40px;
 }
 
 /* Individual Step */
