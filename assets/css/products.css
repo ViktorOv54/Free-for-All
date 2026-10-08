@@ -108,6 +108,40 @@ body {
     font-size: 20px;
 }
 
+/* Products */
+
+.product-grid {
+    width: 74%;
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px 20px;
+}
+
+.product {
+    color: #212121;
+    text-decoration: none;
+}
+
+.product-image {
+    position: relative;
+    height: 185 px;
+    background-color: #E8DDCF;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.product:hover .product-image {
+    transform: translateY(-3px);
+}
+
+.product p {
+    margin-top: 9px;
+    font-size: 14px;
+}
+
 /* =========================
    MENU
 ========================= */
