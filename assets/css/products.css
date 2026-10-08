@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500&family=League+Spartan:wght@700&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -111,12 +110,12 @@ body {
 /* Products */
 
 .product-grid {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 74%;
+    max-width: 1050px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 22px;
+    gap: 22px 20px;
 }
 
 .product {
@@ -133,13 +132,6 @@ body {
     transition: transform 0.2s;
 }
 
-.product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-}
-
 .product:hover .product-image {
     transform: translateY(-3px);
 }
@@ -150,7 +142,7 @@ body {
 }
 
 /* =========================
-   MENU
+*   MENU*
 ========================= */
 
 .menu {
@@ -167,7 +159,6 @@ body {
     z-index: 10;
 }
 
-
 .menu a {
     padding: 12px 15px;
     color: #F7F5F2;
@@ -176,11 +167,9 @@ body {
     font-size: 15px;
 }
 
-
 .menu a:hover {
     background-color: #3A3A3A;
 }
-
 
 /* Show menu */
 
@@ -189,6 +178,7 @@ body {
 }
 
 /* Headings */
+
 .page-heading {
     text-align: center;
     margin-top: 25px;
@@ -206,11 +196,23 @@ body {
     font-size: 14px;
 }
 
+/* Cards */
 
+.about-grid {
+    width: 74%;
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
 
+.about-items {
+    min-width: 0;
+}
 
 /* =========================
-   FOOTER
+*   FOOTER*
 ========================= */
 
 .footer {
@@ -225,21 +227,4 @@ body {
     align-items: center;
     justify-content: space-between;
     font-size: 13px;
-}
-
-
-/* --- Responsive Design --- */
-
-@media (max-width: 1000px) {
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-        width: 90px;
-    }
-}
-
-@media (max-width: 600px) {
-    .product-grid {
-        grid-template-columns: 1fr;
-        width: 90%;
-    }
 }
