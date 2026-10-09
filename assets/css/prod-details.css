@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600&family=League+Spartan:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F5F2;
+    color: #212121;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+.navbar {
+    width: 98%;
+    min-height: 44px;
+    margin: 8px auto 0;
+    padding: 0 18px;
+    background-color: #212121;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 13px;
+}
+
+.search-box {
+    width: 135px;
+    height: 27px;
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-box span {
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 11px;    
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cart {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Main product layout */
+.product-details {
+    width: 64%;
+    max-width: 900px;
+    margin: 28px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Left */
+.product-left h1 {
+    font-family: "League Spartan", sans-serif;
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+.main-product-image {
+    position: relative;
+    background-color: #e8ddcf;
+    border-radius: 13px;
+}
