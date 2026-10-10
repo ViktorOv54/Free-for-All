@@ -147,3 +147,48 @@ main {
 
 /* Product Image and Thumbnails */
 
+.product-image {
+    width: 100%;
+    height: 275px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ded8ca;
+    border: 1px solid #d3cbbe;
+    border-radius: 15px;
+}
+
+.product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    object-fit: contain;
+}
+
+.thumbnail-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.thumbnail-row img {
+    display: block;
+    width: 100%;
+    height: 58px;
+    padding: 8px;
+    object-fit: contain;
+    border-radius: 11px;
+    background-color: #ded8ca;
+    border: 1px solid transparent;
+}
+
+.thumbnail-row img:first-child {
+    border: 1.5px solid #1e4c23;
+}
+
+/* Reviews Section */
+
