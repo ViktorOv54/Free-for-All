@@ -251,3 +251,34 @@ main {
     font-size: 10px;
     line-height: 1.5;
 }
+
+/* About this product */
+
+.product-right {
+    padding-top: 0;
+}
+
+.description {
+    padding: 18px 18px 20px;
+    background-color: #e8ddcf;
+    border: 1px solid #d8cebf;
+    border-radius: 15px;
+}
+
+.description h2 {
+    margin-bottom: 13px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+}
+
+.description p {
+    color: #625d56;
+    font-size: 11px;
+    line-height: 1.75;
+}
+
+.description p + p {
+    margin-top: 10px;
+}
