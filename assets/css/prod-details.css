@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM +Sans:wght@400;500;600;700&family=League+Spartan:wght@600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f7f5f2;
+    color: #212121;
+    font-family: "DM Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+}
+
+/* Navigation */
+
+.navbar {
+    width: 97%;
+    min-height: 58px;
+    margin: 10px auto 0;
+    padding: 0 22px;
+    background-color: #212121;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    flex-shrink: 0;
+    color: #f7f5f2;
+    text-decoration: none;
+    font-family: "Archivo Black", sans-serif;
+    font-size: 15px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #f7f5f2;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 8px 12px;
+    border: 1px solid #777777;
+    border-radius: 18px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #3a3a3a;
+    border-color: #bbbbbb;
+}
+
+.search-box {
+    width: 155px;
+    height: 35px;
+    flex-shrink: 0;
+    background-color: #3a3a3a;
+    border: 1px solid #777777;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.search-box span {
+    color: #bbbbbb;
+    margin-right: 7px;
+}
+
+.search-box input {
+    width: 100%;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font: inherit;
+    font-size: 12px;
+}
+
+.search-box input::placeholder {
+    color: #bbbbbb;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart {
+    color: #f7f5f2;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 6px 9px;
+    border: 1px solid #777777;
+    border-radius: 18px;
+    line-height: 1;
+}
+
+/* Product Details Input */
+
+.product-details {
+    width: 88%;
+    max-width: 990px;
+    margin: 30px auto 65px;
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0px, 1fr);
+    align-items: start;
+    gap: 30px;
+}
+
+.product-left, .product-right {
+    min-width: 0;
+}
+
+.product-left h1 {
+    margin: 0 0 15px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.product-left > p {
+    margin-bottom: 18px;
+    font-size: 12px;
+    line-height: 1.65;
+    color: #5f5b56;
+}
+
+/* Product Image and Thumbnails */
+
