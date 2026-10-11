@@ -19,6 +19,17 @@ body {
 
 /* Navigation */
 
+.navbar {
+    width: 97%;
+    min-height: 58px;
+    margin: 10px auto 0;
+    padding: 0 24px;
+    background-color: #212121;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
