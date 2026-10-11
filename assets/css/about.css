@@ -20,9 +20,9 @@ body {
 /* Navigation */
 
 .navbar {
-    width: 99%;
+    width: 97%;
     min-height: 58px;
-    margin: 0px auto 0;
+    margin: 10px auto 0;
     padding: 0 24px;
     background-color: #212121;
     border-radius: 32px;
@@ -226,9 +226,9 @@ body {
 ========================= */
 
 .footer {
-    width: 99%;
-    min-height: 52px;
-    margin: auto auto 0px;
+    width: 97%;
+    min-height: 50px;
+    margin: auto auto 10px;
     padding: 0 25px;
     border-radius: 30px;
     background-color: #212121;
