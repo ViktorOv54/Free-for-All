@@ -341,11 +341,12 @@ main {
 
 /* Add to cart button */
 .add-to-cart {
+    display: block;
     width: 100%;
-    margin-top: 14px;
-    padding: 12px 20px;
+    margin-top: 12px;
+    padding: 12px;
     background-color: #1E4C23;
-    color: #ffffff;
+    color: #f7f5f2;
     border: none;
     border-radius: 6px;
     font-family: 'DM Sans', sans-serif;
