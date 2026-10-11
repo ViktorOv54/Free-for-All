@@ -299,7 +299,64 @@ main {
     cursor: pointer;
 }
 
+/* Colour swatches */
+.colour-section {
+    margin-top: 8px;
+}
 
+.colour-section p {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.colour-options {
+    display: flex;
+    gap: 8px;
+}
+
+.colour-swatch {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border: 1px solid #c9c3ba;
+    border-radius: 4px;
+}
+
+.forest {
+    background-color: #1E4C23;
+}
+
+.beige {
+    background-color: #E8DDCF;
+}
+
+.grey {
+    background-color: #929491;
+}
+
+.black {
+    background-color: #212121;
+}
+
+
+/* Add to cart button */
+.add-to-cart {
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px 20px;
+    background-color: #1E4C23;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #163a1a;
+}
 
 /* Footer */
 .footer {
