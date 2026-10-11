@@ -280,6 +280,27 @@ main {
     margin-top: 10px;
 }
 
+/* Size Selector */
+
+.size-options {
+    display: flex;
+    gap: 8px;
+}
+
+.size-options button {
+    width: 42px;
+    height: 42px;
+    background-color: #f7f5f2;
+    border: 1px solid #c9c3ba;
+    border-radius: 4px;
+    color: #212121;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+
 /* Footer */
 .footer {
     width: 97%;
