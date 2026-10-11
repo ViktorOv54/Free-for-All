@@ -178,8 +178,7 @@ body {
     align-items: stretch;
 }
 
-.about-items {
-    min-width: 10px;
+.about-item {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -204,18 +203,22 @@ body {
 
 .about-card {
     flex: 1;
-    padding: 40px;
+    padding: 24px 28px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .about-card h2 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 22px;
 }
 
 .about-card p {
-    margin: 100;
-    line-height: 2.5;
-    align-items: center;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #333;
 }
 
 /* =========================
