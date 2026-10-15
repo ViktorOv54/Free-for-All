@@ -16,9 +16,7 @@ body {
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+/* -- Navigation -- */
 
 .navbar {
     width: 97%;
@@ -98,9 +96,7 @@ body {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* -- Hero -- */
 
 .hero {
     width: 88%;
@@ -124,9 +120,7 @@ body {
 }
 
 
-/* =========================
-   HERO TEXT
-========================= */
+/* -- Hero Text -- */
 
 .hero-text {
     width: 48%;
@@ -162,9 +156,7 @@ body {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* -- Footer -- */
 
 .footer {
     width: 97%;
@@ -180,76 +172,121 @@ body {
     font-size: 13px;
 }
 
+.footer p {
+    overflow-wrap: anywhere;
+}
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* -- Responsive Design -- */
 
 @media (max-width: 900px) {
+    .navbar {
+        padding: 8px 16px;
+        gap: 8px;
+    }
     .nav-links {
-        gap: 10px;
+        gap: 4px;
     }
     .nav-links a {
         font-size: 12px;
+        padding: 7px 9px;
     }
     .search-box {
-        width: 120px;
+        flex-basis: 110px;
+    }
+    .hero {
+        width: 90%;
+        gap: 25px;
+        margin: 50px auto;
+    }
+    .hero-text h1 {
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 700px) {
+/* -- Mobile Responsive Design -- */
 
+@media (max-width: 700px) {
     .navbar {
         width: 93%;
         padding: 10px 15px;
-
         flex-wrap: wrap;
+        border-radius: 24px;
+    }
+    .logo {
+        font-size: 15px;
     }
     .nav-links {
         order: 3;
         width: 100%;
-
         justify-content: center;
+        padding-top: 4px;
         padding-bottom: 5px;
+        gap: 7px;
+    }
+    .nav-links a {
+        font-size: 12px;
+        padding: 7px 10px;
     }
     .search-box {
         display: none;
     }
     .hero {
         width: 90%;
-        flex-direction: column;
-        margin-top: 45px;
-    }
-    .hero-image,
-    .hero-text {
-        width: 100%;
-    }
-    .hero-text h1 {
-        font-size: 32px;
-    }
-}
-
-@media (max-width: 500px) {
-
-    .nav-links {
-        gap: 7px;
-    }
-    .nav-links a {
-        font-size: 11px;
-    }
-    .hero {
-        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        margin: 35px auto 40px;
     }
     .placeholder-image {
-        height: 280px;
+        height: clamp(230px, 60vw, 350px);
     }
     .hero-text h1 {
-        font-size: 28px;
+        font-size: clamp(27px, 6vw, 34px);
+        margin-bottom: 20px;
+    }
+    .hero-text p {
+        font-size: 15px;
     }
     .footer {
         width: 93%;
         flex-direction: column;
+        justify-content: center;
+        text-align: center;
         gap: 6px;
-        padding: 12px;
+        padding: 14px 12px;
+    }
+}
+
+/* -- Small Mobile Responsive Design -- */
+
+@media (max-width: 380px) {
+    .navbar {
+        padding: 10px;
+    }
+    .logo {
+        font-size: 14px;
+    }
+    .nav-links {
+        gap: 5px;
+    }
+    .nav-links a {
+        font-size: 11px;
+        padding: 7px 8px;
+    }
+    .cart {
+        font-size: 18px;
+        padding: 6px 8px;
+    }
+    .hero {
+        width: 92%;
+        margin-top: 28px;
+    }
+    .placeholder-image {
+        height: 230px;
+    }
+    .hero-text h1 {
+        font-size: 26px;
+    }
+    .shop-button {
+        padding: 12px 22px;
     }
 }
